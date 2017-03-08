@@ -51,9 +51,11 @@ while(k<len(letter)):
     if(letter[k] in alphabet):
         letter[k]=letter[k]
     else:
-        letter[k]=100
+        letter[k]=-1
     k+=1
-print(letter)
+#print(letter)
+
+
 """
 ((letter).count('a'))
 ((letter).count('b'))
