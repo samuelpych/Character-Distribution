@@ -36,3 +36,34 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+letter=input("Please enter a string of text (the bigger the better): ")
+print("The distrubution of characters in \"" +letter+ "\". is:")
+((letter).count('a'))
+((letter).count('b'))
+((letter).count('c'))
+((letter).count('d'))
+((letter).count('e'))
+((letter).count('f'))
+((letter).count('g'))
+((letter).count('h'))
+((letter).count('i'))
+((letter).count('j'))
+((letter).count('k'))
+((letter).count('l'))
+((letter).count('m'))
+((letter).count('n'))
+((letter).count('o'))
+((letter).count('p'))
+((letter).count('q'))
+((letter).count('r'))
+((letter).count('s'))
+((letter).count('t'))
+((letter).count('u'))
+((letter).count('v'))
+((letter).count('w'))
+((letter).count('x'))
+((letter).count('y'))
+((letter).count('z'))
+
+for x in letter:
+    if letter==" " or letter=="." or letter"?" or letter=="," or letter==";"  or letter==":" or letter=="!" or letter=="-"
