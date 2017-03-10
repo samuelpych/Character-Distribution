@@ -38,6 +38,7 @@ Notice about this example:
 """
 import string
 alphabet=list(string.ascii_lowercase)
+numbers = ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25']
 
 
 letter=input("Please enter a string of text (the bigger the better): ")
@@ -53,37 +54,14 @@ while(k<len(letter)):
     else:
         letter[k]=-1
     k+=1
-#print(letter)
 
-
-"""
-((letter).count('a'))
-((letter).count('b'))
-((letter).count('c'))
-((letter).count('d'))
-((letter).count('e'))
-((letter).count('f'))
-((letter).count('g'))
-((letter).count('h'))
-((letter).count('i'))
-((letter).count('j'))
-((letter).count('k'))
-((letter).count('l'))
-((letter).count('m'))
-((letter).count('n'))
-((letter).count('o'))
-((letter).count('p'))
-((letter).count('q'))
-((letter).count('r'))
-((letter).count('s'))
-((letter).count('t'))
-((letter).count('u'))
-((letter).count('v'))
-((letter).count('w'))
-((letter).count('x'))
-((letter).count('y'))
-((letter).count('z'))
-
-for x in letter:
-    if letter==" " or letter=="." or letter=="?" or letter=="," or letter==";"  or letter==":" or letter=="!":
-"""
+k=0
+a=int(alphabet.index(letter[0]))
+while(k<=len(letter)):
+    if letter[k]== -1:
+        k=k
+    elif(a<=alphabet.index(letter[k])):
+        a=a
+    else: a=letter[k]
+    k+=1
+print(alphabet[a])
