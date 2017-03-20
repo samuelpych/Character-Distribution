@@ -58,7 +58,7 @@ while(k<len(letter)):
 k=0
 a=int(alphabet.index(letter[0]))
 while(k<=len(letter)):
-    if letter[k]== -1:
+    if letter[k]== (-1):
         k=k
     elif(a<=alphabet.index(letter[k])):
         a=a
