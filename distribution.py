@@ -41,41 +41,20 @@ alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r
 letter=input("Please enter a string of text (the bigger the better): ")
 print("The distrubution of characters in \"" +letter+ "\". is:")
 letter=letter.lower()
-thingweird=[]
+bazinga=[]
 for a in alphabet:
-    fakeletter = letter.count(a)
-    if not fakeletter == 0:
-        thingweird.append(a*fakeletter)
+    ben = letter.count(a)
+    if not ben == 0:
+        bazinga.append(a*ben)
 
 for b in range (26):
-    wub=0
-    while wub < len(thingweird)-1:
-        if len(thingweird[wub]) < len(thingweird[wub+1]):
-            ire = thingweird[wub]
-            thingweird[wub]=thingweird[wub+1]
-            thingweird[wub+1]=ire
-        ire+=1
-for g in thingweird:
+    wub = 0
+    while wub < len(bazinga)-1:
+        if len(bazinga[wub]) < len(bazinga[wub+1]):
+            wrk=bazinga[wub]
+            bazinga[wub]=bazinga[wub+1]
+            bazinga[wub+1]=wrk
+        wrk+=1
+for g in bazinga:
     print(g)
     
-"""
-#print(letter)
-letter=list(letter)
-#print(letter)
-k=0
-while(k<len(letter)):
-    if(letter[k] in alphabet):
-        letter[k]=letter[k]
-    else:
-        letter[k]=-1
-    k+=1
-
-k=0
-a=int(alphabet.index(letter[0]))
-while(k<=len(letter)):
-    if int(a<alphabet.index(letter[k])):
-        a=a
-    else: a=letter[k]
-    k+=1
-print(alphabet[a])
-"""
