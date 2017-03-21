@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Sam
-Credit: Ethan and Earl
+Credit: Ethan, Earl, and Kezar
 
 Assignment:
 
@@ -37,13 +37,28 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
-alphabet=list(string.ascii_lowercase)
-numbers = ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25']
-
-
+alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
 letter=input("Please enter a string of text (the bigger the better): ")
 print("The distrubution of characters in \"" +letter+ "\". is:")
 letter=letter.lower()
+thingweird=[]
+for a in alphabet:
+    fakeletter = letter.count(a)
+    if not fakeletter == 0:
+        thingweird.append(a*fakeletter)
+
+for b in range (26):
+    wub=0
+    while wub < len(thingweird)-1:
+        if len(thingweird[wub]) < len(thingweird[wub+1]):
+            ire = thingweird[wub]
+            thingweird[wub]=thingweird[wub+1]
+            thingweird[wub+1]=ire
+        ire+=1
+for g in thingweird:
+    print(g)
+    
+"""
 #print(letter)
 letter=list(letter)
 #print(letter)
@@ -63,3 +78,4 @@ while(k<=len(letter)):
     else: a=letter[k]
     k+=1
 print(alphabet[a])
+"""
