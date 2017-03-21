@@ -38,23 +38,27 @@ Notice about this example:
 """
 import string
 alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
-letter=input("Please enter a string of text (the bigger the better): ")
-print("The distrubution of characters in \"" +letter+ "\". is:")
-letter=letter.lower()
+idk=input("Please enter a string of text (the bigger the better): ")
+print("The distrubution of characters in \"" +idk+ "\" is:")
+
+idk=idk.lower()
 bazinga=[]
+
 for a in alphabet:
-    ben = letter.count(a)
-    if not ben == 0:
+     ben = idk.count(a)
+     if not ben == 0:
         bazinga.append(a*ben)
 
-for b in range (26):
-    wub = 0
-    while wub < len(bazinga)-1:
-        if len(bazinga[wub]) < len(bazinga[wub+1]):
-            wrk=bazinga[wub]
-            bazinga[wub]=bazinga[wub+1]
-            bazinga[wub+1]=wrk
-        wrk+=1
-for g in bazinga:
-    print(g)
+for b in range(26):
+    plz= 0
+
+    while plz < len(bazinga)-1:
+        if len(bazinga[plz]) < len(bazinga[plz+1]):
+            lit = (bazinga[plz])
+            bazinga[plz]=bazinga[plz+1]
+            bazinga[plz+1]=lit
+        plz +=1
+        
+for c in bazinga:
+    print(c)
     
